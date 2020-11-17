@@ -1,0 +1,26 @@
+.view{
+  line-height: 1.8;
+  font-family: 'SiyamRupali', sans-serif;
+  color: #7A7A7A;
+  line-height: 1.8;
+}
+.btn-read-more {
+  padding: 13px 45px;
+  color: #FFFFFF;
+  background: #007BEB;
+  border: none;
+  border-radius: 50px;
+  font-size: 17px;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.read-more-link {
+  display: flex;
+  justify-content: flex-end;
+  color: #1D7FE5;
+  text-decoration: none;
+  font-weight: 600;
+}

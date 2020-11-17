@@ -1,0 +1,4 @@
+<div class="view" [innerHTML]="modifiedDesc"></div>
+
+<a class="read-more-link" *ngIf="!needBtn" href="javascript:" (click)="onReadMore()">{{needMore ? 'Read Less' : 'Read More'}}</a>
+<button class="btn-read-more" *ngIf="needBtn" (click)="onReadMore()">{{needMore ? 'Read Less' : 'Read More'}}</button>

@@ -1,0 +1,12 @@
+<app-header>
+  <div class="container">
+    <div class="title">
+      <h2>আমাদের সেবা !</h2>
+    </div>
+    <img src="../../../assets/images/about.png" alt="">
+  </div>
+</app-header>
+<div *ngFor="let description of descriptions">
+  <app-article [card]="description"></app-article>
+</div>
+<app-footer></app-footer>

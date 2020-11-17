@@ -1,0 +1,16 @@
+<div [ngClass]="applyClassObj">
+  <div class="img_part">
+    <img [src]="card.img" alt="" />
+  </div>
+  <div class="des_part">
+    <p class="title span-bold">
+      {{ card.title }}
+    </p>
+
+    <p>
+      <app-read-more [desc]="card.des" [length]="card.len" [needBtn]="false"></app-read-more>
+    </p>
+  </div>
+</div>
+
+<!-- [ngClass]="applyClassObj" -->

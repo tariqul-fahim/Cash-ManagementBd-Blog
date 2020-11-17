@@ -1,0 +1,27 @@
+<app-header>
+    <div class="container">
+        <div class="title">
+            <h2>আমাদের ক্লায়েন্টদের মন্তব্য</h2>
+            <p>আপনাদের গঠনমূলক মন্তব্য আমাদের জন্য অনুপ্ররণা...</p>
+        </div>
+        <img src="../../../assets/images/comments.png" alt="">
+    </div>
+</app-header>
+
+<main>
+    <div class="card" *ngFor="let card of cards">
+        <span>
+            <img [src]="card.img" alt="">
+        </span>
+        <div class="des">
+          <app-read-more [desc]="card.des" [length]="card.len" [needBtn]="false"></app-read-more>
+<!--            <p>{{card.des}}</p>-->
+        <div class="shopAndOwner">
+            <p class="shop">{{card.shop}}</p>
+            <p class="owner">{{card.owner}}</p>
+        </div>
+        </div>
+    </div>
+</main>
+
+<app-footer></app-footer>

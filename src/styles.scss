@@ -1,1 +1,44 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.maateen.me/siyam-rupali/font.css');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap');
+
+*,
+*:after,
+*::before {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.gap {
+  margin-top: 90px;
+}
+
+.sm-gap {
+  margin-top: 45px;
+}
+
+html { overflow: auto; height: 100%; }
+
+// html, body { overflow: auto; height: 100%; }
+//html, body { height: 100%; }
+//body { margin: 0; font-family: openSansRegular, sans-serif; }
+//body { height: 100%; margin: 0; font-family: 'SiyamRupali', sans-serif; }
+body { height: 100%; margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+// FOR READ MORE AREA
+p {
+  font-family: 'SiyamRupali', sans-serif;
+  color: #7A7A7A;
+  line-height: 1.8;
+}
+.span-bold {
+  font-weight: bold;
+  color: #495464;
+}
+.p-gap {
+  margin: 20px 0;
+}

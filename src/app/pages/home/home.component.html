@@ -1,0 +1,115 @@
+<app-header>
+  <div class="top_part">
+    <div class="top_part_container">
+      <div class="title">
+        <h2 style="margin-bottom: 8px;">Cash</h2>
+        <h2>Management</h2>
+      </div>
+      <div class="card">
+        <h3>ব্যবসায়ের নগদ অর্থ সচল করতে চান ?</h3>
+        <p>SME ব্যবসায়ীদের জন্য “নগদ ব্যবস্থাপনা”</p>
+        <button>এখনই ফ্রি!!! রেজিস্ট্রেশন করুন</button>
+      </div>
+    </div>
+    <div>
+      <img src="../../../assets/images/Mask Group 1.png" alt="">
+    </div>
+  </div>
+
+  <div class="bottom_part">
+    <div>
+      <div class="title">
+        <h3>নগদ অর্থই কি ব্যবসায়ের হৃৎপিন্ড বা ব্যবসায়িক সফলতার কেন্দ্রবিন্দু ?</h3>
+      </div>
+      <div class="bottom_part_container">
+        <div class="img">
+          <img src="../../../assets/images/Mask Group 2.png" alt="">
+        </div>
+        <div class="des">
+          <app-read-more [desc]="businessHeartTxt" [length]="781" [needBtn]="true"></app-read-more>
+        </div>
+      </div>
+    </div>
+  </div>
+</app-header>
+
+<main>
+  <div class="what_why_how">
+    <div class="title">
+      <h2>কি, কেন, কিভাবে ?</h2>
+    </div>
+    <div *ngFor="let description of descriptions">
+      <app-article [card]="description"></app-article>
+    </div>
+  </div>
+  <div class="card_sec">
+    <div class="title">
+      <h3>আমাদের সাথে</h3>
+      <h3>কেন কাজ কাজ করবেন ?</h3>
+    </div>
+    <div class="cards">
+      <div class="card">
+        <img src="../../../assets/images/wall-clock-of-circular-shape.png" alt="">
+        <p class="card_title">সময়ের কাজ সময়ে</p>
+        <p class="card_des">সুপরিকল্পনার মাধ্যমে সময়ের কাজ সময়ে করা
+          আমাদের অন্যতম সাফল্যের হাতিয়ার।</p>
+      </div>
+      <div class="card">
+        <img src="../../../assets/icons/checking-mark.png" alt="">
+        <p class="card_title">কঠোর পরিশ্রমী</p>
+        <p class="card_des">সম্পূর্ণ গোপনীয়তা রক্ষা করে
+          কঠোর পরিশ্রমের মাধ্যমে আমরা সেবা দিয়ে যাচ্ছি।</p>
+      </div>
+      <div class="card">
+        <img src="../../../assets/icons/daily-calendar-page-on-january-11.png" alt="">
+        <p class="card_title">২৪ ঘন্টা যোগাযোগ</p>
+        <p class="card_des">তাৎক্ষনিক কোন তথ্য জানতে বা জানাতে
+          যে কোন সময় যোগাযোগ করতে পারেন।</p>
+      </div>
+      <div class="card">
+        <img src="../../../assets/icons/money-bag.png" alt="">
+        <p class="card_title">সর্বাধিক মুনাফা</p>
+        <p class="card_des">সেবার মাধ্যমে সর্বাধিক মুনাফা তৈরিতে সহায়তা করাই আমাদের অঙ্গীকার।</p>
+      </div>
+      <div class="card">
+        <img src="../../../assets/icons/question-mark-draw.png" alt="">
+        <p class="card_title">দৈনিক হিসাব নিকাশ</p>
+        <p class="card_des">প্রতিদিনের হিসাব প্রতিদিন জানতে পারবেন,এবং আমরা সাপ্তাহিক একটা রিপোর্ট পাবেন।</p>
+      </div>
+      <div class="card">
+        <img src="../../../assets/icons/goal.png" alt="">
+        <p class="card_title">লক্ষ্যের প্রতি মনোযোগী</p>
+        <p class="card_des">ব্যবসায়ের লক্ষ্যের প্রতি মনোযোগী হতে
+          সহায়ক হিসেবে ভূমিকা পালন করি।</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="comment_carousel">
+    <div class="title">
+      <h2>সবাই আমাদের সম্পর্কে কী বলে?</h2>
+    </div>
+  </div> <!--end comment_carousel-->
+  <div class="client_carousel">
+    <div class="title">
+      <h2>এক নজরে আমাদের ক্লায়েন্ট</h2>
+    </div>
+<!--    <app-carousel></app-carousel>-->
+    <div class="carousel">
+      <div class="carousel_one">
+
+      </div>
+      <div class="carousel_one">
+
+      </div>
+      <div class="carousel_one">
+
+      </div>
+      <div class="carousel_one">
+
+      </div>
+    </div>
+  </div><!--end client_carousel-->
+</main>
+
+<app-footer></app-footer>

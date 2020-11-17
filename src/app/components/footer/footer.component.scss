@@ -1,0 +1,100 @@
+.footer{
+    padding: 100px 0px;
+    background-color: #F9F9F9;
+    display: flex;
+    justify-content: space-around;
+
+    .logo-part{
+      text-align: center;
+
+      img{
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+      }
+      h3{
+        font-size: 1.3rem;
+        margin: 0px;
+      }
+      h5{
+        font-size: 0.7rem;
+        color: gray;
+      }
+    }
+
+    .navigation-part{
+      display: flex;
+      flex-direction: column;
+      //gap: 10px;
+      justify-content: center;
+      align-items: center;
+      //text-align: center;
+      p{
+        margin-bottom: 10px;
+        font-size: 1.3rem;
+
+        a{
+          text-decoration: none;
+          color: gray;
+        }
+      }
+    }
+
+    .reg-part{
+      button{
+        width: 230px;
+        height: 60px;
+        font-size: 1.1rem;
+        margin-bottom: 20px;
+        border-radius: 20px;
+        border: none;
+        background-color: #1F90F8;
+        color: white;
+      }
+
+      .social-links{
+        display: flex;
+        gap: 20px;
+
+        .following{
+          display: flex;
+          //justify-content: center;
+          align-items: center;
+          color: gray;
+        }
+
+        .fb-link{
+          img{
+            width: 28px;
+          }
+        }
+        .you-tube-link{
+          img{
+            width: 40px;
+          }
+        }
+      }
+    }
+  }
+
+  .copy-right{
+    text-align: center;
+    background-color: #0765BB;
+    padding: 20px 0px;
+
+    h4{
+      margin: 0px;
+      color: white;
+      letter-spacing: 1px;
+      font-size: 1rem;
+    }
+  }
+
+  @media screen and (max-width: 767px){
+    .footer{
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 25px;
+    }
+  }

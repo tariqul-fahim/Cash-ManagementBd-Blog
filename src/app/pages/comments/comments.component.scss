@@ -1,0 +1,88 @@
+.container{
+    padding: 50px 0px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    //text-align: center;
+
+    .title{
+        flex-basis: 60%;
+        text-align: right;
+
+        h2{
+            font-size: 35px;
+            color: #495464;
+        }
+    }
+    img{
+        width: 200px;
+        height: 200px;
+    }
+}
+main{
+    padding: 10% 15% 0% 15%;
+    display: flex;
+    justify-content: space-around;
+    gap: 2%;
+    flex-wrap: wrap;
+
+    .card{
+        margin-bottom: 8%;
+        padding: 25px;
+        width: 320px;
+        border-radius: 25px;
+        box-shadow: 0px 3px 23px #DCEEFF;
+
+        span{
+          img{
+            width: 40px;
+          }
+        }
+        .des{
+            //text-align: center;
+            margin: 30px 0px;
+
+            p{
+                font-size: 14px;
+                margin-bottom: 30px;
+            }
+            .shopAndOwner{
+              margin-top: 20px;
+            }
+            .shop{
+                margin-bottom: 0px;
+                font-size: 15px;
+                font-weight: 600;
+            }
+            .owner{
+                font-size: 12px;
+                margin-top: 3px;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 576px){
+  .container{
+    flex-direction: column;
+    align-items: center;
+
+    .title{
+      text-align: center;
+
+      h2{
+        font-size: 8vw;
+      }
+      p{
+        display: none;
+      }
+    }
+  }
+  main{
+    padding: 10px;
+    .card{
+      width: 100%;
+    }
+  }
+}

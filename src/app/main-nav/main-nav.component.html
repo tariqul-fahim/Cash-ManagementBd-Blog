@@ -1,0 +1,36 @@
+<div class="header"
+     [ngClass]="{'sticky': scrollPosition > 0}"
+     [ngStyle]="{
+     'background': uiService.getNavHeaderColor() !== null ? uiService.getNavHeaderColor() : 'transparent'
+     }">
+  <div class="logo" routerLink="/" (click)="hideMenu()">
+    <img src="/assets/images/logo.png" alt="Softlabit Logo">
+  </div>
+  <div class="menu" [ngClass]="{'show-mobile-menu': isMenuOpen}">
+    <ul class="nav">
+      <li *ngFor="let menu of menuLink">
+        <a [ngClass]="{'sticky-link': scrollPosition > 0}" (click)="hideMenu()" [routerLink]="menu.url" [class.link-active]="selectedPath === menu.url">{{menu.name}}</a>
+      </li>
+    </ul>
+    <div class="action">
+      <button mat-raised-button routerLink="/offer-services" (click)="hideMenu()">
+        রেজিস্ট্রেশন করুন
+      </button>
+      <a>Login</a>
+
+      <div *ngIf="(isHandset$ | async)" class="gap"></div>
+    </div>
+  </div>
+
+  <div class="hamburger">
+    <button mat-icon-button (click)="onClickHamburger()">
+      <mat-icon>{{isMenuOpen ? 'close' : 'menu'}}</mat-icon>
+    </button>
+  </div>
+
+</div>
+
+<!-- Main Area Start...-->
+<main [ngClass]="{'content-no-scroll': (isHandset$ | async) && isMenuOpen}">
+  <ng-content></ng-content>
+</main>

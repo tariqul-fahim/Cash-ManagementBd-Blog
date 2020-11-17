@@ -1,0 +1,43 @@
+<app-header>
+    <div>
+        <h1>আপনাদের কিছু প্রশ্নের উত্তর </h1>
+    </div>
+    <div>
+        <img src="../../../assets/images/qus_img.png" alt="QUestion image">
+    </div>
+</app-header> <!--end header section-->
+
+
+<!-- <div *ngFor="let description of descriptions; index as i;">
+    <div *ngIf="i%2==0; then thenBlock else elseBlock"></div>
+  <ng-template #thenBlock>
+    <div class="container">
+      <div class="image-part">
+        <img [src]="description.img" alt="">
+      </div>
+      <div class="des-part">
+        <p>
+          {{description.des}}
+        </p>
+      </div>
+    </div>
+  </ng-template>
+  <ng-template #elseBlock>
+    <div class="container-reverse">
+      <div class="image-part">
+        <img [src]="description.img" alt="">
+      </div>
+      <div class="des-part">
+        <p>
+          {{description.des}}
+        </p>
+      </div>
+    </div>
+  </ng-template>
+  </div> -->
+
+<div *ngFor="let description of descriptions">
+  <app-article [card]="description"></app-article>
+</div>
+
+<app-footer></app-footer>

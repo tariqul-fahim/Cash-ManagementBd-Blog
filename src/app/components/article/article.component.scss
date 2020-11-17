@@ -1,0 +1,75 @@
+h1, h2, h3, h4, h5, h6, p {
+  font-family: 'SiyamRupali', sans-serif;
+}
+p{
+  line-height: 25px;
+}
+
+.container{
+    margin-top: 50px;
+    padding:100px;
+    display: flex;
+    //flex-direction: row-reverse;
+    justify-content: space-around;
+
+}
+.img_part{
+    text-align: center;
+    flex-basis: 40%;
+    img{
+        width: 300px;
+        height: 250px;
+    }
+}
+.des_part{
+    width: 80%;
+    flex-basis: 60%;
+
+    .title{
+        font-size: 25px;
+    }
+    p{
+        width: 80%;
+    }
+}
+.reverse_container{
+    background-color: #E6F3FF;
+    margin-top: 50px;
+    padding:100px 100px 100px 180px;
+    display: flex;
+    //flex-direction: row-reverse;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+
+    .img_part{
+        text-align: left;
+        img{
+
+        }
+    }
+}
+
+
+@media screen and (max-width: 992px){
+  .container,.reverse_container{
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    padding: 8%;
+  }
+  .des_part{
+    width: 100%;
+    //flex-basis: 60%;
+    p{
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .img_part{
+    img{
+      width: 100%;
+    }
+  }
+}
